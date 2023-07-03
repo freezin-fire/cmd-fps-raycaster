@@ -89,6 +89,9 @@ int main()
                 playerY += cosf(playerA) * 5.0f * elapsedTime;
             }
         }
+
+        // Left and right strafing not implemented yet, cause some trigonometry issues.
+        // Will look at it later
         /*if (GetAsyncKeyState((unsigned short)'A') & 0x8000) {
             playerY -= sinf(playerA) * 5.0f * elapsedTime;
             playerX -= cosf(playerA) * 5.0f * elapsedTime;
